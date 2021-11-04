@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { SWRConfig } from "swr";
+
+const fetcher = (...args) => fetch(...args).then(res => res.json());
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SWRConfig value={{ fetcher }}>
+      <App />
+    </SWRConfig>
   </React.StrictMode>,
   document.getElementById('root')
 );

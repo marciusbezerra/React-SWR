@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SWR - Teste com a biblioteca de Cache",
+  "name": "SWR - Teste com a biblioteca de Cache",
   "icons": [
     {
       "src": "favicon.ico",
